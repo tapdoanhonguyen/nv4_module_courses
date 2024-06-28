@@ -1,0 +1,515 @@
+/**
+ * @Project NUKEVIET 4.x
+ * @Author BCB SOLUTIONS <bachdinhcao@gmail.com>
+ * @Copyright (C) 2024 BCB SOLUTIONS. All rights reserved
+ * @License: Not free read more http://nukeviet.vn/vi/store/modules/nvtools/
+ * @Createdate Tue, 19 Mar 2024 07:46:52 GMT
+ */
+
+
+.lesson-item{
+	position: relative;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.lesson-item .lesson-thumb{
+	position: relative;
+
+}
+
+.lesson-item .lesson-thumb img{
+	width: 100%;
+	max-height: 280px;
+	object-fit: cover;
+}
+
+
+.lesson-item .lesson-content{
+	padding: 15px;
+}
+
+.lesson-item .lesson-content h3{
+	font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.lesson-item .lesson-content a{
+	color: #333;
+	transition: 0.3s all;
+}
+
+.lesson-item .lesson-content a:hover{
+	color: #fab23d;
+}
+
+.lesson-item .lesson-content .breadcrumbs-segments{
+    background-color: transparent;
+    padding: 0;
+    margin-top: 10px;;
+    margin-bottom: 0;
+}
+
+.lesson-item .lesson-content .breadcrumbs-segments .progress-box{
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: right;
+}
+
+.lesson-item .lesson-content .breadcrumbs-segments .progress-box-bar{
+    width: 100%;
+    margin-bottom: 6px;
+    margin-right: 0;
+    background-color: #eee;
+}
+
+.lesson-item .lesson-button{
+	position: relative;
+    display: block;
+    color: #fff !important;
+    background-color: #0cc0df;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #357ebd;
+}
+
+.lesson-description{
+    position: relative;
+    border: 1px solid #696969;
+    padding: 30px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.lesson-description .files{
+    margin-top: 20px;
+}
+
+.lesson-description a{
+    color: #f7a218;
+}
+
+/*View Lesson*/
+.course-status{
+    background-color: #f0f3f6;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.course-status .course-status-item{
+    position: relative;
+    border-right: 2px solid #c1c1c1;
+    padding: 10px 0;
+}
+
+.course-status .row > div:last-child .course-status-item{
+    border: none;
+}
+
+.course-status-item span{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.course-status-item span:last-child{
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.course-status-item .course-price{
+    font-size: 20px;
+    font-weight: 700 !important;
+    color: #dd0000;
+    letter-spacing: 1px;
+}
+
+.viewlesson h1{
+    color: #f38619;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.viewlesson-content h2{
+    color: #f38619;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+.viewlesson-content-item{
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #e2e7ed;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 22px;
+}
+
+.viewlesson-content-item .status-incomplete{
+    display: inline-block;
+    background-color: #fff;
+    border: 4px solid #e2e7ed;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
+.viewlesson-content-item .status-incomplete.complete{
+    position: relative;
+    background-color: #FAB23D;
+    border-color: #FAB23D;
+}
+
+.viewlesson-content-item .status-incomplete.complete:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "\f00c";
+    color: #fff;
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+}
+
+
+.viewlesson-content-item h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.viewlesson .enrolled{
+    padding: 10px 20px;
+}
+
+.viewlesson .breadcrumbs-segments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs-segments .progress-box{
+    display: flex;
+    align-items: center;
+    flex-basis: 75%;
+}
+
+.breadcrumbs-segments .progress-heading{
+    color: #FAB23D;
+}
+
+.breadcrumbs-segments .progress-box-bar{
+    position: relative;
+    flex-basis: 80%;
+    background-color: #fff;
+    border-radius: 7px;
+    height: 7px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.breadcrumbs-segments .progress-bar-percentage{
+    height: 7px;
+    background-color: #FAB23D
+}
+
+.button-status{
+    display: inline-block !important;
+    background-color: #dd0000;
+    color: #fff !important;
+    padding: 6px 22px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.course-detail h1{
+    font-size: 22px;
+    font-weight: 500;
+    color: #fab23d;
+    margin-bottom: 10px;
+}
+
+.course-detail .lesson-description{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.backto{
+    display: block;
+    color: #dcdcdc !important;
+}
+
+.final-exam h2{
+    font-size: 22px;
+    font-weight: 500;
+    color: #fab23d;
+    margin-bottom: 10px;
+}
+
+.final-exam .question-content{
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.final-exam-reply{
+    margin-top: 20px;
+}
+
+.final-exam-reply h2{
+    margin-bottom: 10px!important;
+}
+
+.final-exam-reply .button{
+    border: none;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 22px;
+}
+
+.final-exam-question h2,
+.final-exam-reply h2{
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.control-fileupload {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #d6d7d6;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 100%;
+    height: 42px;
+    padding: 4px 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.control-fileupload label {
+    line-height: 24px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0px;
+    cursor: text;
+}
+
+input[type=file] {
+    display: block !important;
+    right: 1px;
+    top: 1px;
+    height: 34px;
+    opacity: 0;
+    width: 100%;
+    background: none;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.course-detail-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.complete-button,
+.next-post,
+.prev-post{
+    position: relative;
+    background-color: #FAB23D;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 50px 8px 25px;
+    font-weight: 500;
+    color: #fff !important;
+    transition: 0.3s all;
+}
+
+.next-post,
+.prev-post{
+    background-color: #0cc0df;
+    padding: 8px 25px;
+}
+
+.complete-button:hover,
+.next-post:hover,
+.prev-post:hover{
+    opacity: 0.8;
+}
+
+.complete-button:after{
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    content: "\f00c";
+    font: normal normal normal 14px / 1 FontAwesome;
+    transform: translateY(-50%);
+}
+
+.breadcrumbs-segments{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: #f0f3f6;
+    border-radius: 6px;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+}
+
+.breadcrumbs-segments .status-progress,
+.breadcrumbs-segments .status-complete{
+    display: inline-block;
+    background-color: #00a2e8;
+    color: #fff;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 20px;
+    float: right;
+}
+
+.breadcrumbs-segments .status-complete{
+    background-color: #FAB23D;
+}
+
+.course-order{
+    position: relative;
+    background-color: #151515;
+    padding: 40px 20px;
+}
+
+.course-order-info h2{
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.course-order-info label{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.course-order-detail{
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.course-order-detail h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.course-order-detail ul{
+    margin-bottom: 20px;
+}
+
+.course-order-detail .btn{
+    width: 100%;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.4s all;
+}
+
+.course-order-detail .btn:hover{
+    background-color: #e88c30;
+    color: #fff;
+}
+
+.course-order-detail strong{
+    float: right;
+}
+
+.course-order-detail .order-submit{
+    margin-top: 25px;
+}
+
+.payment-box{
+    position: relative;
+    background-color: #151515;
+    padding: 40px;
+    width: 62%;
+    margin: 0 auto;
+}
+
+.payment-box h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.payment-box h2,
+.payment-box strong{
+    color: #fab23d;
+}
+
+.payment-box img{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.order-list .btn{
+    background-color: #ddd;
+    color: #222;
+    font-size: 16px;
+    padding: 4px 20px;
+}
+
+.order-list a{
+    color: #fab23d;
+}
+
+.order-list span{
+    display: inline-block;
+    min-width: 180px;
+}
+
+table{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+table td,
+table th{
+    padding: 10px 10px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+
